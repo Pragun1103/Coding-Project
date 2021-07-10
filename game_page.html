@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math game</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+<label id="player1name"></label><span id="player1score"></span>
+<br>
+<label id="player2name"></label><span id="player2score"></span>
+<br>
+<div class="container">
+	<center>
+		<h2 style="color: white;">Solve!</h2>
+<h3 id="playerquestion"></h3>
+<h4 id="playeranswer"></h4>
+<div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+
+		<label>Send You Number</label>
+
+		<br>
+<input placeholder="1 Number" id="word1" type="text" class="form-control">
+<br>
+<input placeholder=" 2 Number" id="word2" type="text" class="form-control">
+<br>
+<button  onclick="send()" class="btn btn-success" style="width: 30%;" > Send</button>
+	
+</center>
+
+	
+</div>
+
+<script src="gamepage.js"></script>
+</body>
+</html>
